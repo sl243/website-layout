@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+
+    <style>
+        .container {
+            border: 5px dotted cornflowerblue;
+            height: 500px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            border: 2px solid coral;
+            width: 200px;
+            height: 200px;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        #box-1 {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 4</div>
+
+    </div>
+    <div class="container">
+        <div class="box">box 1</div>
+        <div id="box-1" class="box">box 2</div>
+
+    </div>
+</body>
+
+</html>
